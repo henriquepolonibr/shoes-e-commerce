@@ -2,7 +2,6 @@ import React from 'react';
 import * as S from './styles'
 
 const ProductCard = (params) =>{
-    console.log('valor do props2', params)
     return(
         <S.Card>
             <S.ProductImage src={params.thumbnailURL}></S.ProductImage>

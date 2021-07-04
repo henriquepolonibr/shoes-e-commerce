@@ -8,6 +8,7 @@ export const Card = styled.div`
     margin: 25px 39px 50px;
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
     border-radius: 5px 5px 0px 0px;
+    background-color: white;
 `
 
 export const ProductImage = styled.img`
