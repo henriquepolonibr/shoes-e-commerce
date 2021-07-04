@@ -16,7 +16,6 @@ export const HeaderButton = styled.button`
     position: relative;
     height: 34.81px;
     width: 115.29px;
-    background: rgba(0, 0, 0, 0.05);
     border-radius: 17.4025px;
     font-family: Arial;
     font-style: normal;
@@ -26,6 +25,9 @@ export const HeaderButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #EAEAEA;
+    padding-left: 20px;
+    border-width: 0px;
 
     svg{
         position: absolute;

@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import IndexPage from './Pages'
+import App from './App'
 
 import GlobalStyles from './Styles/Global'
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
-    <IndexPage />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

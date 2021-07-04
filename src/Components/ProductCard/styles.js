@@ -9,6 +9,9 @@ export const Card = styled.div`
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
     border-radius: 5px 5px 0px 0px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const ProductImage = styled.img`

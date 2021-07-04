@@ -20,17 +20,31 @@ export const SearchBox = styled.div`
 
 `
 
-export const SearchText = styled.span`
+export const SearchText = styled.textarea`
     color: #A8A8A8; 
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
     text-align: center;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 20px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none !important; 
+
+    &:focus::placeholder {
+        color: transparent;
+    }
 
     @media (min-width: 768px){
     font-size: 24px;
-    line-height: 33px;
+    line-height: 24px;
 }
 `

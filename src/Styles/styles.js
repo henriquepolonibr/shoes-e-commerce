@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProductPage = styled.div`
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
 `
 
 export const ProductsShowCase = styled.div`
