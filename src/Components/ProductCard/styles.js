@@ -101,7 +101,7 @@ export const CardButton = styled.button`
     background: #6B8067;
     border-radius: 4.50483px;
     color: white;
-    width: 80%;
+    width: 100%;
     margin: 0px 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;

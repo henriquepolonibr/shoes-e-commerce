@@ -13,7 +13,6 @@ const IndexPage = () => {
   useEffect(() => {
     axios.get('https://voliveira.s3-sa-east-1.amazonaws.com/sneakers/index.json')
         .then(response => setProductData(response.data.results));
-        console.log('response', productFilter)
   }, []);
   return (
     <S.ProductPage>
