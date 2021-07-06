@@ -19,7 +19,16 @@ export const ProductImage = styled.img`
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 `
+export const ProductDescription = styled.div`
+    padding: 10px;
+    width: 100%;
 
+`
+export const ProductSizeAndQuantity = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
 export const ProductTitle = styled.span`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,7 +38,7 @@ export const ProductTitle = styled.span`
     line-height: 18px;
     text-align: center;
     color: #000000;
-    margin: 20px 0px 15px;
+    margin: 10px 0px 15px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -102,7 +111,6 @@ export const CardButton = styled.button`
     border-radius: 4.50483px;
     color: white;
     width: 100%;
-    margin: 0px 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: bold;
