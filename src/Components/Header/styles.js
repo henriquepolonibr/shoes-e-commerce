@@ -3,9 +3,10 @@ import styled from 'styled-components'
 export const Header = styled.div`
     height: 100px;
     width: 100%;
+    padding: 0px 14px;
     color: gray;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     @media (min-width: 768px){
         background-color: #F1F1F1;
@@ -20,8 +21,9 @@ export const HeaderButton = styled.button`
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 21.7531px;
-    line-height: 25px;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +36,10 @@ export const HeaderButton = styled.button`
         left: 12px;
         font-size: 18px;
         font-weight: 300;
+    }
+    @media(min-width: 768px){
+        font-size: 21.7531px;
+        line-height: 25px;
     }
 `
 

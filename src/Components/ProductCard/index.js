@@ -26,7 +26,7 @@ const ProductCard = (params) =>{
                 </S.ProductQuantityInput>
             </div>
             <S.ProductPrice>$ {params.price}</S.ProductPrice>
-            <Link to={`/product/${params.id}`}><S.CardButton>Add to cart</S.CardButton></Link>
+            <Link to={`/checkout/${params.id}`}><S.CardButton>Add to cart</S.CardButton></Link>
         </S.Card>
     )
 }

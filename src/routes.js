@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home'
-import Product from './Pages/Product'
+import Checkout from './Pages/Checkout'
 import Header from './Components/Header'
 
 const Routes = () => {
@@ -10,7 +10,7 @@ const Routes = () => {
             <Header />
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route exact path="/product/:idNumber" component={Product}/>
+                <Route exact path="/checkout/:idNumber" component={Checkout}/>
             </Switch>
         </BrowserRouter>
     )
