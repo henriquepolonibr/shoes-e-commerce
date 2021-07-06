@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CheckoutCard = styled.div`
+export const CheckoutCardDesktop = styled.div`
     position: relative;
     margin-top: 15px;
     height: 244px;

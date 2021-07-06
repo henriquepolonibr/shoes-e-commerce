@@ -10,6 +10,7 @@ export const Header = styled.div`
     align-items: center;
     @media (min-width: 768px){
         background-color: #F1F1F1;
+        padding: 0px 45px;
     }
 `
 

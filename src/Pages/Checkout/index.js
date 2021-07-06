@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { CheckoutPage } from '../../Styles/styles'
-import CheckoutCard from '../../Components/CheckoutCard'
+import CheckoutCardMobile from '../../Components/CheckoutCardMobile'
+import CheckoutCardDesktop from '../../Components/CheckoutCardDesktop'
 import CheckoutPayment from '../../Components/CheckoutPayment'
 
 const Checkout = () => {
@@ -23,7 +24,13 @@ const Checkout = () => {
             <CheckoutPage>
                 <h1>Checkout</h1>
                 {productFiltered.map((product) => (
-                    <CheckoutCard
+                    <CheckoutCardMobile
+                    {...product}
+                    key={product.id}
+                    />
+                ))}
+                {productFiltered.map((product) => (
+                    <CheckoutCardDesktop
                     {...product}
                     key={product.id}
                     />

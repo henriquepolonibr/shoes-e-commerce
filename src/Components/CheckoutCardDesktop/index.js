@@ -1,10 +1,10 @@
 import React from 'react';
 import * as S from './styles'
 
-const CheckoutCard = (params) => {
+const CheckoutCardDesktop = (params) => {
         return(
         <div>
-            <S.CheckoutCard>
+            <S.CheckoutCardDesktop>
                 <S.ProductImage src={params.thumbnailURL}></S.ProductImage>
                 <S.ProductInfo>
                     <S.ProductTitle>{params.description}</S.ProductTitle>
@@ -20,9 +20,9 @@ const CheckoutCard = (params) => {
                     <S.DeliveryIncludedTitle><br />Delivery included</S.DeliveryIncludedTitle>
                 </S.Total>
                 <S.CostPrice>${params.price}</S.CostPrice>
-            </S.CheckoutCard>
+            </S.CheckoutCardDesktop>
         </div>
     )
 }
 
-export default CheckoutCard
+export default CheckoutCardDesktop
