@@ -2,10 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { CheckoutPage } from '../../Styles/styles'
+import { CheckoutPage, CheckoutPaymentMobileStyle } from '../../Styles/styles'
 import CheckoutCardMobile from '../../Components/CheckoutCardMobile'
 import CheckoutCardDesktop from '../../Components/CheckoutCardDesktop'
-import CheckoutPayment from '../../Components/CheckoutPayment'
+import CheckoutPaymentMobile from '../../Components/CheckoutPayment'
 
 const Checkout = () => {
     const { idNumber } = useParams()
@@ -35,7 +35,7 @@ const Checkout = () => {
                     key={product.id}
                     />
                 ))}
-                <CheckoutPayment />
+                <CheckoutPaymentMobileStyle><CheckoutPaymentMobile /></CheckoutPaymentMobileStyle>
             </CheckoutPage>
         </div>
     )

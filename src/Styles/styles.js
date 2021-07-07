@@ -33,3 +33,9 @@ export const CheckoutPage = styled.div`
         }
     }
 `
+
+export const CheckoutPaymentMobileStyle = styled.div`
+    @media(min-width:768px){
+        display: none;
+    }
+`

@@ -13,6 +13,11 @@ export const CheckoutTitle = styled.h2`
     font-size: 17px;
     line-height: 23px;
     color: #000000;
+    @media(min-width:768px){
+        font-size: 22px;
+        line-height: 30px;
+        padding: 40px 30px 0px 38px;
+    }
 `
 
 export const CheckoutPaymentCard = styled.div`
@@ -23,6 +28,9 @@ export const CheckoutPaymentCard = styled.div`
     background: #F7F7F7;
     border-radius: 9px;
     padding: 20px;
+    @media(min-width:768px){
+        padding: 20px 30px 0px 38px;
+    }
 `
 export const CheckoutPaymentItem = styled.div`
     display: flex;
@@ -36,6 +44,11 @@ export const CheckoutPaymentItem = styled.div`
     &:active{
     border: 2px solid #63B55C;
   }
+    @media(min-width:768px){
+        &:hover{
+            border: 2px solid #63B55C;
+        }
+    }
 `
 export const CheckoutPaymentItemTitle = styled.div`
     display: flex;
@@ -92,4 +105,9 @@ export const CheckoutButton = styled.button`
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    @media(min-width:768px){
+        width: 300px;
+        position: absolute;
+        right: 30px;
+    }
 `
