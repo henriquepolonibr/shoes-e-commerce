@@ -44,7 +44,7 @@ export const SearchText = styled.textarea`
     }
 
     @media (min-width: 768px){
-    font-size: 24px;
-    line-height: 24px;
-}
+        font-size: 24px;
+        line-height: 18px;
+    }
 `

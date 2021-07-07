@@ -6,6 +6,7 @@ import { CheckoutPage, CheckoutPaymentMobileStyle } from '../../Styles/styles'
 import CheckoutCardMobile from '../../Components/CheckoutCardMobile'
 import CheckoutCardDesktop from '../../Components/CheckoutCardDesktop'
 import CheckoutPaymentMobile from '../../Components/CheckoutPayment'
+import BreadCrumb from '../../Components/BreadCrumbs'
 
 const Checkout = () => {
     const { idNumber } = useParams()
@@ -23,6 +24,7 @@ const Checkout = () => {
         <div>
             <CheckoutPage>
                 <h1>Checkout</h1>
+                <BreadCrumb />
                 {productFiltered.map((product) => (
                     <CheckoutCardMobile
                     {...product}
@@ -35,7 +37,9 @@ const Checkout = () => {
                     key={product.id}
                     />
                 ))}
-                <CheckoutPaymentMobileStyle><CheckoutPaymentMobile /></CheckoutPaymentMobileStyle>
+                <CheckoutPaymentMobileStyle>
+                    <CheckoutPaymentMobile />
+                </CheckoutPaymentMobileStyle>
             </CheckoutPage>
         </div>
     )

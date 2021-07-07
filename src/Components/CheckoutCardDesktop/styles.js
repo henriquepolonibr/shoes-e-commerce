@@ -10,7 +10,7 @@ export const CheckoutCardDesktop = styled.div`
 export const ProductImage = styled.img`
     max-height: 633px;
     max-width: 45%;
-    margin: 40px 38px 0px 45px;
+    margin: 20px 38px 0px 45px;
     border-radius: 18px;
 `
 
@@ -18,7 +18,7 @@ export const ProductInfo = styled.div`
     position: relative;
     height: 633px;
     width: 55%;
-    margin: 40px 45px 0px 0px;
+    margin: 20px 45px 0px 0px;
     background-color: #F7F7F7;
     border-radius: 18px;
 `

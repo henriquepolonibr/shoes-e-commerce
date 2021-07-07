@@ -56,6 +56,7 @@ export const ProductSize = styled.span`
 `
 
 export const ProductSizeInput = styled.select`
+    text-indent: 5px;
     border: 2px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 25.2271px;
