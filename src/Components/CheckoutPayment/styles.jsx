@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const CheckoutPayment = styled.div`
     position: relative;
@@ -6,7 +6,7 @@ export const CheckoutPayment = styled.div`
     height: 244px;
     width: 100%;
     border-radius: 9px;
-`
+`;
 
 export const CheckoutTitle = styled.h2`
     font-family: Open Sans;
@@ -18,7 +18,7 @@ export const CheckoutTitle = styled.h2`
         line-height: 30px;
         padding: 40px 30px 0px 38px;
     }
-`
+`;
 
 export const CheckoutPaymentCard = styled.div`
     position: relative;
@@ -31,7 +31,7 @@ export const CheckoutPaymentCard = styled.div`
     @media(min-width:768px){
         padding: 20px 30px 0px 38px;
     }
-`
+`;
 export const CheckoutPaymentItem = styled.div`
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ export const CheckoutPaymentItem = styled.div`
             border: 2px solid #63B55C;
         }
     }
-`
+`;
 export const CheckoutPaymentItemTitle = styled.div`
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ export const CheckoutPaymentItemTitle = styled.div`
     font-size: 13.5333px;
     line-height: 18px;
     color: #565656;
-`
+`;
 export const CheckoutPaymentItemDiscountLabel = styled.div`
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ export const CheckoutPaymentItemDiscountLabel = styled.div`
     line-height: 10px;
     text-align: center;
     color: #9E7D27;
-`
+`;
 
 export const CheckoutPaymentItemImage = styled.img`
     display: flex;
@@ -87,7 +87,7 @@ export const CheckoutPaymentItemImage = styled.img`
     margin-right: 20px;
     max-height: 21px;
     max-width: 130px;
-`
+`;
 
 export const CheckoutButton = styled.button`
     height: 41px;
@@ -110,4 +110,4 @@ export const CheckoutButton = styled.button`
         position: absolute;
         right: 30px;
     }
-`
+`;

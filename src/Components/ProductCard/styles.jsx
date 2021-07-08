@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Card = styled.div`
     max-width: 297.32px;
@@ -12,23 +12,23 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
+`;
 
 export const ProductImage = styled.img`
     height: 171.18px;
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-`
+`;
 export const ProductDescription = styled.div`
     padding: 10px;
     width: 100%;
 
-`
+`;
 export const ProductSizeAndQuantity = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
 
 export const ProductTitle = styled.span`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -42,8 +42,7 @@ export const ProductTitle = styled.span`
     width: 100%;
     display: flex;
     justify-content: center;
-
-`
+`;
 
 export const ProductSize = styled.span`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -53,7 +52,7 @@ export const ProductSize = styled.span`
     line-height: 18px;
     color: #8D8D8D;
     margin-right: 5px;
-`
+`;
 
 export const ProductSizeInput = styled.select`
     text-indent: 5px;
@@ -83,12 +82,12 @@ export const ProductSizeInput = styled.select`
         padding: 0px 2px 1px;
         margin-left: 10px;
     }
-`
+`;
 export const ProductQuantity = styled(ProductSize)`
     margin-left: 15px;
-`
+`;
 export const ProductQuantityInput = styled(ProductSizeInput)`
-`
+`;
 
 export const ProductPrice = styled.span`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -101,7 +100,7 @@ export const ProductPrice = styled.span`
     margin: 20px 0px;
     display: flex;
     justify-content: center;
-`
+`;
 
 export const CardButton = styled.button`
     display: flex;
@@ -119,4 +118,4 @@ export const CardButton = styled.button`
     line-height: 19px;
     text-align: center;
     box-sizing: border-box;
-`
+`;

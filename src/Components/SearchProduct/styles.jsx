@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const SearchBox = styled.div`
     margin: 13px 10px;
@@ -17,8 +17,7 @@ export const SearchBox = styled.div`
         font-size: 18px;
         font-weight: 300;
     }
-
-`
+`;
 
 export const SearchText = styled.textarea`
     color: #A8A8A8; 
@@ -47,4 +46,4 @@ export const SearchText = styled.textarea`
         font-size: 24px;
         line-height: 18px;
     }
-`
+`;

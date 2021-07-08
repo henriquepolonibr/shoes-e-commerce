@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ProductPage = styled.div`
     background-color: #FFFFFF;
-`
+`;
 
 export const ProductsShowCase = styled.div`
     display: flex;
@@ -13,7 +13,7 @@ export const ProductsShowCase = styled.div`
     @media (min-width: 768px){
         flex-direction: row;
     }
-`
+`;
 
 export const CheckoutPage = styled.div`
     margin: 15px 14px 55px;
@@ -32,10 +32,10 @@ export const CheckoutPage = styled.div`
             display: none;
         }
     }
-`
+`;
 
 export const CheckoutPaymentMobileStyle = styled.div`
     @media(min-width:768px){
         display: none;
     }
-`
+`;

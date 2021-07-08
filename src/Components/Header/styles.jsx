@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Header = styled.div`
     height: 100px;
@@ -12,7 +12,7 @@ export const Header = styled.div`
         background-color: #F1F1F1;
         padding: 0px 45px;
     }
-`
+`;
 
 export const HeaderButton = styled.button`
     position: relative;
@@ -42,7 +42,7 @@ export const HeaderButton = styled.button`
         font-size: 21.7531px;
         line-height: 25px;
     }
-`
+`;
 
 export const HeaderTitle = styled.span`
     display: none;
@@ -55,7 +55,7 @@ export const HeaderTitle = styled.span`
     line-height: 30px;
     text-align: center;
     }
-`
+`;
 
 export const PictureAvatar = styled.div`
     height: 34.81px;
@@ -65,4 +65,4 @@ export const PictureAvatar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
