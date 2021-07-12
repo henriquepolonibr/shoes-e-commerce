@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { CheckoutPage } from '../../Styles/styles';
 import OrderSummaryMobile from '../../Components/OrderSummaryMobile';
+import PaymentMethodMobile from '../../Components/PaymentMethodMobile';
 import BreadCrumb from '../../Components/BreadCrumbs';
 
 const Receipt = () => {
@@ -22,6 +23,12 @@ const Receipt = () => {
         <BreadCrumb />
         {productFiltered.map((product) => (
           <OrderSummaryMobile
+            {...product}
+            key={product.id}
+          />
+        ))}
+        {productFiltered.map((product) => (
+          <PaymentMethodMobile
             {...product}
             key={product.id}
           />

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CheckoutCardMobile = styled.div`
     position: relative;
     margin-top: 15px;
-    height: 244px;
+    height: 166px;
     width: 100%;
     background: #F7F7F7;
     border-radius: 9px;
@@ -11,12 +11,21 @@ export const CheckoutCardMobile = styled.div`
         display: none;
     }
 `;
+
+export const CardTitle = styled.h2`
+    position: relative;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 154.6%;
+    color: #000000;
+    padding: 10px 20px 10px;
+`;
+
 export const ProductImage = styled.img`
-    position: absolute;
-    top: 0px;
-    height: 106px;
+    height: 92px;
     width: 92px;
-    margin: 20px 30px 0px 10px;
+    margin: 5px 30px 0px 20px;
     background: #F7F7F7;
     border-radius: 9px;
 `;
@@ -24,6 +33,7 @@ export const ProductImage = styled.img`
 export const ProductInfo = styled.div`
     position: absolute;
     left: 135px;
+    top: 50px;
     padding-top: 20px;
 `;
 
@@ -40,45 +50,4 @@ export const ProductDescription = styled.div`
     font-size: 14.4356px;
     line-height: 21px;
     color: #A5A5A5;
-`;
-
-export const DeliveryDetailTitle = styled.span`
-    font-family: Arial;
-    font-size: 13.16px;
-    line-height: 18px;
-    letter-spacing: 0.612903px;
-    color: #212121;
-`;
-export const DeliveryDetailDescription = styled.div`
-    font-family: Arial;
-    font-size: 13.16px;
-    line-height: 18px;
-    letter-spacing: 0.612903px;
-    color: #A5A5A5;
-`;
-export const Total = styled.div`
-    position: absolute;
-    bottom: 20px;
-    margin-left: 10px;
-`;
-
-export const TotalCostTitle = styled.span`
-    font-family: Open Sans;
-    font-size: 13.5333px;
-    color: #000000;
-`;
-
-export const DeliveryIncludedTitle = styled(TotalCostTitle)`
-    line-height: 20px;
-    color: #A5A5A5;
-`;
-export const CostPrice = styled.div`
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-family: Trustly Sans;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 36px;
-    color: #000000;
 `;
