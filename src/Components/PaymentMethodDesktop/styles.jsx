@@ -15,35 +15,27 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductInfo = styled.div`
+    position: relative;
     height: 633px;
     width: 55%;
     margin: 20px 45px 0px 0px;
     background-color: #F7F7F7;
     border-radius: 18px;
-    @media(max-width: 1200px){
-        height: 800px;
-    };
-`;
-export const ProductFlex = styled.div`
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    @media(max-width: 1200px){
-        flex-direction: column;
-     }
 `;
 export const CartTotal = styled.h2`
     font-family: Open Sans;
     font-size: 22px;
     line-height: 30px;
-    margin: 30px 0px 19px 38px;
+    color: #000000;
+    margin: 30px 0px 19px 50px;
 `;
 
 export const ProductTitle = styled.span`
     font-family: Open Sans;
     font-size: 16px;
     line-height: 20px;
-    margin: 0px 0px 6px 45px;
+    color: #000000;
+    margin: 0px 0px 6px 50px;
 `;
 
 export const ProductDescription = styled.div`
@@ -52,19 +44,31 @@ export const ProductDescription = styled.div`
     font-size: 16px;
     line-height: 25px;
     color: #A5A5A5;
-    margin-left: 45px;
+    margin-left: 50px;
+`;
+
+export const PaymentTitle = styled.div`
+    position: absolute;
+    top: 29px;
+    right: 161px;
+    font-family: Open Sans;
+    font-size: 19.6129px;
+    line-height: 154.6%;
 `;
 
 export const DeliveryDetail = styled.div`
-    margin: 30px 55px 19px 38px;
-    padding: 0px 50px 0px 0px;
-    width: 100%
+    margin: 70px 80px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const DeliveryDetailTitle = styled.span`
     font-family: Open Sans;
     font-size: 20px;
     line-height: 154.6%;
+    color: #000000;
+    margin-bottom: 13px;
 `;
 export const DeliveryDetailDescription = styled.div`
     font-family: Open Sans;
@@ -75,15 +79,11 @@ export const DeliveryDetailDescription = styled.div`
     margin-bottom: 13px;
 `;
 
-export const CostBlock = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
-
 export const TotalCostTitle = styled.span`
     font-family: Open Sans;
     font-size: 16px;
     line-height: 20px;
+    color: #000000;
 `;
 
 export const DeliveryIncludedTitle = styled(TotalCostTitle)`
@@ -94,5 +94,23 @@ export const CostPrice = styled.div`
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
-    margin-right: 50px;
+    color: #000000;
+    margin: 0px 10px;
 `;
+
+export const PaymentButton = styled.div`
+    width: 302px;
+    height: 41px;
+    background: #6B8067;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+`

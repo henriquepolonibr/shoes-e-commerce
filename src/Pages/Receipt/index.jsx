@@ -5,6 +5,7 @@ import axios from 'axios';
 import { CheckoutPage } from '../../Styles/styles';
 import OrderSummaryMobile from '../../Components/OrderSummaryMobile';
 import PaymentMethodMobile from '../../Components/PaymentMethodMobile';
+import PaymentMethodDesktop from '../../Components/PaymentMethodDesktop';
 import BreadCrumb from '../../Components/BreadCrumbs';
 
 const Receipt = () => {
@@ -29,6 +30,12 @@ const Receipt = () => {
         ))}
         {productFiltered.map((product) => (
           <PaymentMethodMobile
+            {...product}
+            key={product.id}
+          />
+        ))}
+        {productFiltered.map((product) => (
+          <PaymentMethodDesktop
             {...product}
             key={product.id}
           />

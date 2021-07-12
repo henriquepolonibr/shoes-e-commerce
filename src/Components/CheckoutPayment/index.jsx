@@ -7,7 +7,7 @@ import BankImage from '../../Asset/img/online-banking.png';
 import CreditCardImage from '../../Asset/img/credit-card.png';
 import ApplePayImage from '../../Asset/img/apple-pay.png';
 
-const CheckoutPayment = (params) => {
+const CheckoutPayment = (params, id) => {
   return (
     <div>
       <S.CheckoutPayment>
