@@ -1,11 +1,13 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable arrow-body-style */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import * as S from './styles';
 import BankImage from '../../Asset/img/online-banking.png';
 import CreditCardImage from '../../Asset/img/credit-card.png';
 import ApplePayImage from '../../Asset/img/apple-pay.png';
 
-const CheckoutPayment = () => {
+const CheckoutPayment = (params) => {
   return (
     <div>
       <S.CheckoutPayment>
@@ -27,7 +29,9 @@ const CheckoutPayment = () => {
             <S.CheckoutPaymentItemImage src={ApplePayImage} />
           </S.CheckoutPaymentItem>
         </S.CheckoutPaymentCard>
-        <S.CheckoutButton>Continue</S.CheckoutButton>
+        <Link to={`/receipt/${params.id}`}>
+          <S.CheckoutButton>Continue</S.CheckoutButton>
+        </Link>
       </S.CheckoutPayment>
     </div>
   );
