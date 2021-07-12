@@ -2,7 +2,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import * as S from './styles';
-import CheckoutPayment from '../CheckoutPayment';
+// import CheckoutPayment from '../CheckoutPayment';
 import greenBank from '../../Asset/img/green-bank.png';
 
 const CheckoutCardDesktop = (params) => {
@@ -11,23 +11,29 @@ const CheckoutCardDesktop = (params) => {
       <S.CheckoutCardDesktop>
         <S.ProductImage src={params.maxresURL} />
         <S.ProductInfo>
-          <S.CartTotal>Order Summary</S.CartTotal>
-          <S.ProductTitle>{params.description}</S.ProductTitle>
-          <S.ProductDescription>
-            x 1,
-            {params.color}
-            ,Size 41
-            <br />
-            Item #
-            {params.id}
-          </S.ProductDescription>
-          <S.PaymentTitle>
-            Payment Method
-          </S.PaymentTitle>
-          {/* <S.PaymentImageBlock>
-            <S.PaymentImage src={greenBank} />
-            <S.PaymentDescription>Online Banking</S.PaymentDescription>
-          </S.PaymentImageBlock> */}
+          <S.ProductDescriptionFlex>
+            <div>
+              <S.CartTotal>Order Summary</S.CartTotal>
+              <S.ProductTitle>{params.description}</S.ProductTitle>
+              <S.ProductDescription>
+                x 1,
+                {params.color}
+                ,Size 41
+                <br />
+                Item #
+                {params.id}
+              </S.ProductDescription>
+            </div>
+            <div>
+              <S.PaymentTitle>
+                Payment Method
+              </S.PaymentTitle>
+              <S.PaymentImageBlock>
+                <S.PaymentImage src={greenBank} />
+                <S.PaymentDescription>Online Banking</S.PaymentDescription>
+              </S.PaymentImageBlock>
+            </div>
+          </S.ProductDescriptionFlex>
           <S.DeliveryDetail>
             <div>
               <S.TotalCostTitle>Total cost</S.TotalCostTitle>

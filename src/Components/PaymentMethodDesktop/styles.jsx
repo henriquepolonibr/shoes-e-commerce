@@ -22,6 +22,14 @@ export const ProductInfo = styled.div`
     background-color: #F7F7F7;
     border-radius: 18px;
 `;
+export const ProductDescriptionFlex = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @media(max-width: 1200px){
+        flex-direction: column;
+    }
+`;
 export const CartTotal = styled.h2`
     font-family: Open Sans;
     font-size: 22px;
@@ -48,12 +56,33 @@ export const ProductDescription = styled.div`
 `;
 
 export const PaymentTitle = styled.div`
-    position: absolute;
-    top: 29px;
-    right: 161px;
     font-family: Open Sans;
     font-size: 19.6129px;
     line-height: 154.6%;
+    margin: 30px 180px 0px 0px;
+    @media(max-width: 1200px){
+        margin: 50px 0px 0px 50px;
+    }
+`;
+export const PaymentImageBlock = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 27px;
+    @media(max-width: 1200px){
+        margin: 0px 0px 0px 50px;
+    }
+`;
+
+export const PaymentImage = styled.img`
+    height: 47px;
+    width: 47px;
+    margin: 0px 9px 0px -10px;
+`;
+
+export const PaymentDescription = styled.div`
+    font-family: Open Sans;
+    font-size: 17px;
+    line-height: 20px;
 `;
 
 export const DeliveryDetail = styled.div`
@@ -98,7 +127,7 @@ export const CostPrice = styled.div`
     margin: 0px 10px;
 `;
 
-export const PaymentButton = styled.div`
+export const PaymentButton = styled.button`
     width: 302px;
     height: 41px;
     background: #6B8067;
@@ -113,4 +142,4 @@ export const PaymentButton = styled.div`
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-`
+`;
