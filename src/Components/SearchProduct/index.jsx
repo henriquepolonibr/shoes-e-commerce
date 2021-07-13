@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { UserContext } from '../../Contexts/filter';
 import * as S from './styles';
 
 const SearchProduct = () => {
-  const [filterText, setFilterText] = useState('');
+  const { filter, setFilter } = useContext(UserContext);
   return (
     <S.SearchBox>
       <FontAwesomeIcon icon={faSearch} size="sm" />
@@ -13,8 +14,8 @@ const SearchProduct = () => {
         name="filterTextArea"
         type="text"
         id="textAreaFilterField"
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
       />
     </S.SearchBox>
   );

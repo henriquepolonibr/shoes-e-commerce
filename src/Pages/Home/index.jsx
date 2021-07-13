@@ -1,13 +1,23 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable eqeqeq */
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import SearchProduct from '../../Components/SearchProduct';
 import ProductCard from '../../Components/ProductCard';
+import { UserContext } from '../../Contexts/filter';
 import * as S from '../../Styles/styles';
 
 const IndexPage = () => {
+  const { filter } = useContext(UserContext);
   const [productData, setProductData] = useState([]);
-  const productFilter = productData;
+  let productDataFilter = productData;
+  let productFiltered = productData;
+  if (filter.length > 0) {
+    productFiltered = productData.filter((product) => product.description == filter);
+  } else {
+    productDataFilter = productData.filter((product) => product.description == filter);
+  }
 
   useEffect(() => {
     axios.get('https://voliveira.s3-sa-east-1.amazonaws.com/sneakers/index.json')
@@ -17,7 +27,7 @@ const IndexPage = () => {
     <S.ProductPage>
       <SearchProduct />
       <S.ProductsShowCase>
-        {productFilter.map((product) => (
+        {productFiltered.map((product) => (
           <ProductCard
             {...product}
             key={product.id}
