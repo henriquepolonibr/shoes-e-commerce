@@ -7,6 +7,21 @@ import BankImage from '../../Asset/img/online-banking.png';
 import CreditCardImage from '../../Asset/img/credit-card.png';
 import ApplePayImage from '../../Asset/img/apple-pay.png';
 
+function transaction(priceAmount){
+  PayWithMyBank.establish({
+    accessId: 'D61EC9BAF0BB369B9438',
+    merchantId: '1004314986',
+    metadata: { demo: 'enabled' },
+    currency: 'USD',
+    paymentType: 'Deferred',
+    amount: priceAmount,
+    description: 'your@email.here',
+    merchantReference: '123456',
+    returnUrl: '#success',
+    cancelUrl: '#cancel'
+  });
+}
+
 const CheckoutPayment = (params) => {
   return (
     <div>
@@ -30,7 +45,7 @@ const CheckoutPayment = (params) => {
           </S.CheckoutPaymentItem>
         </S.CheckoutPaymentCard>
         <Link to={`/receipt/${params.id}`}>
-          <S.CheckoutButton>Continue</S.CheckoutButton>
+          <S.CheckoutButton onClick={() => transaction(params.price)}>Continue</S.CheckoutButton>
         </Link>
       </S.CheckoutPayment>
     </div>
