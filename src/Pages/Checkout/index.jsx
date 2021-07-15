@@ -7,6 +7,7 @@ import CheckoutCardMobile from '../../Components/CheckoutCardMobile';
 import CheckoutCardDesktop from '../../Components/CheckoutCardDesktop';
 import CheckoutPaymentMobile from '../../Components/CheckoutPayment';
 import BreadCrumb from '../../Components/BreadCrumbs';
+import Header from '../../Components/Header';
 
 const Checkout = () => {
   const { idNumber } = useParams();
@@ -22,6 +23,7 @@ const Checkout = () => {
   }, []);
   return (
     <div>
+      <Header title="Checkout" />
       <CheckoutPage>
         <h1>Checkout</h1>
         <BreadCrumb />

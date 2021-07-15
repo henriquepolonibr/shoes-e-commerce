@@ -7,6 +7,7 @@ import SearchProduct from '../../Components/SearchProduct';
 import ProductCard from '../../Components/ProductCard';
 import { UserContext } from '../../Contexts/filter';
 import * as S from '../../Styles/styles';
+import Header from '../../Components/Header';
 
 const IndexPage = () => {
   const { filter } = useContext(UserContext);
@@ -14,9 +15,9 @@ const IndexPage = () => {
   let productDataFilter = productData;
   let productFiltered = productData;
   if (filter.length > 0) {
-    productFiltered = productData.filter((product) => product.description == filter);
+    productFiltered = productData.filter((product) => product.description.includes(filter));
   } else {
-    productDataFilter = productData.filter((product) => product.description == filter);
+    productDataFilter = productData.filter((product) => product.description.includes(filter));
   }
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const IndexPage = () => {
   }, []);
   return (
     <S.ProductPage>
+      <Header title="Sneakers" />
       <SearchProduct />
       <S.ProductsShowCase>
         {productFiltered.map((product) => (

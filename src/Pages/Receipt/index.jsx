@@ -7,6 +7,7 @@ import OrderSummaryMobile from '../../Components/OrderSummaryMobile';
 import PaymentMethodMobile from '../../Components/PaymentMethodMobile';
 import PaymentMethodDesktop from '../../Components/PaymentMethodDesktop';
 import BreadCrumb from '../../Components/BreadCrumbs';
+import Header from '../../Components/Header';
 
 const Receipt = () => {
   const { idNumber } = useParams();
@@ -19,6 +20,7 @@ const Receipt = () => {
   }, []);
   return (
     <div>
+      <Header title="Review and Confirmation" />
       <CheckoutPage>
         <h1>Review and Confirmation</h1>
         <BreadCrumb />

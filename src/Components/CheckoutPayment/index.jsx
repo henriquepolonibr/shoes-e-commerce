@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable arrow-body-style */
 import React from 'react';
@@ -7,7 +8,7 @@ import BankImage from '../../Asset/img/online-banking.png';
 import CreditCardImage from '../../Asset/img/credit-card.png';
 import ApplePayImage from '../../Asset/img/apple-pay.png';
 
-function transaction(priceAmount){
+function transaction(priceAmount) {
   PayWithMyBank.establish({
     accessId: 'D61EC9BAF0BB369B9438',
     merchantId: '1004314986',
@@ -18,7 +19,7 @@ function transaction(priceAmount){
     description: 'your@email.here',
     merchantReference: '123456',
     returnUrl: '#success',
-    cancelUrl: '#cancel'
+    cancelUrl: '#cancel',
   });
 }
 
