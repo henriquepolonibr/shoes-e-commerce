@@ -23,7 +23,7 @@ const Receipt = () => {
       <Header title="Review and Confirmation" />
       <CheckoutPage>
         <h1>Review and Confirmation</h1>
-        <BreadCrumb />
+        <BreadCrumb greenDots="3" />
         {productFiltered.map((product) => (
           <OrderSummaryMobile
             {...product}

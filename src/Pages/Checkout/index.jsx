@@ -26,7 +26,7 @@ const Checkout = () => {
       <Header title="Checkout" />
       <CheckoutPage>
         <h1>Checkout</h1>
-        <BreadCrumb />
+        <BreadCrumb greenDots="2" />
         {productFiltered.map((product) => (
           <CheckoutCardMobile
             {...product}
