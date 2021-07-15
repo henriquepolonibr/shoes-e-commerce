@@ -26,7 +26,7 @@ export const SearchText = styled.textarea`
     font-weight: 300;
     text-align: center;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     width: 100%;
     background-color: #FFFFFF;
     border: none;

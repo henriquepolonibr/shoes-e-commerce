@@ -26,7 +26,7 @@ const IndexPage = () => {
   }, []);
   return (
     <S.ProductPage>
-      <Header title="Sneakers" />
+      <Header showButton="hidden" title="Sneakers" />
       <SearchProduct />
       <S.ProductsShowCase>
         {productFiltered.map((product) => (

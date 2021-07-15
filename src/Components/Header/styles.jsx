@@ -1,3 +1,4 @@
+/* eslint-disable no-confusing-arrow */
 import styled from 'styled-components';
 
 export const Header = styled.div`
@@ -25,6 +26,7 @@ export const HeaderButton = styled.button`
     font-family: Arial;
     font-size: 18px;
     line-height: 21px;
+    visibility: ${(props) => props.showButton || 'visible'};
     display: flex;
     align-items: center;
     justify-content: center;

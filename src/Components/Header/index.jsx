@@ -11,7 +11,7 @@ const Header = (params) => {
   return (
     <div>
       <S.Header>
-        <S.HeaderButton onClick={() => history.goBack()}>
+        <S.HeaderButton onClick={() => history.goBack()} showButton={params.showButton}>
           <FontAwesomeIcon icon={faArrowLeft} size="lg" />
           <span>Back</span>
         </S.HeaderButton>

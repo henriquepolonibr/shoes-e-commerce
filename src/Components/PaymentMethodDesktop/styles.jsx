@@ -18,7 +18,7 @@ export const ProductInfo = styled.div`
     position: relative;
     height: 633px;
     width: 55%;
-    margin: 20px 45px 0px 0px;
+    margin: 20px 45px 20px 0px;
     background-color: #F7F7F7;
     border-radius: 18px;
 `;
